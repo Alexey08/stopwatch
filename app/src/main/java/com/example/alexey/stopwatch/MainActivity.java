@@ -1,5 +1,6 @@
 package com.example.alexey.stopwatch;
 
+import android.content.pm.ActivityInfo;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         Button resetButton = (Button)findViewById(R.id.button2);
         resetButton.setEnabled(false);
 
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStart(View view) {
 
-        Button startStopButton = (Button)findViewById(R.id.button);
+        Button startStopButton = (Button)findViewById(R.id.button1);
         Button resetButton = (Button)findViewById(R.id.button2);
 
                 if (running) {
@@ -45,8 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
         running = false;
         one = 0;
-        Button startStopButton = (Button)findViewById(R.id.button);
+
+        Button startStopButton = (Button)findViewById(R.id.button1);
         startStopButton.setText("Start");
+
+        Button resetButton = (Button)findViewById(R.id.button2);
+        resetButton.setEnabled(false);
 
     }
 
