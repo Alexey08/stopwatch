@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         Button resetButton = (Button)findViewById(R.id.button2);
-        resetButton.setEnabled(false);
+        resetButton.setEnabled(true);
 
         runTimer();
     }
@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 if (running) {
                     running = false;
                     startStopButton.setText("Start");
-                    resetButton.setEnabled(false);
+                    resetButton.setEnabled(true);
                 } else  {
                     running = true;
                     startStopButton.setText("Stop");
-                    resetButton.setEnabled(true);
+                    resetButton.setEnabled(false);
                 }
 
     }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         startStopButton.setText("Start");
 
         Button resetButton = (Button)findViewById(R.id.button2);
-        resetButton.setEnabled(false);
+        resetButton.setEnabled(true);
 
     }
 
