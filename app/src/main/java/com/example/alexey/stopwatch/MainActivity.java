@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+//тест  Git 1
+
 public class MainActivity extends AppCompatActivity {
 
     private int one;
