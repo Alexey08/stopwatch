@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+//кнопка старт/стоп
     <TextView
         android:id="@+id/time_View"
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-
+//табло
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="@id/time_View"
         app:layout_constraintTop_toTopOf="@id/time_View"
         />
-
+//кнопка стоп
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
